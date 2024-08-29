@@ -9,4 +9,18 @@ pipeline {
     }
   }
 }
-// git remote add origin https://github.com/aanabdulrohman/jenkins-pipeline.git
+
+post {
+  always {
+    echo "Hallo guys"
+  }
+  success {
+    echo "Yeay success gusy"
+  }
+  failure {
+    echo "Oh no, failure"
+  }
+  cleanup {
+    echo "Don't care success or error"
+  }
+}
