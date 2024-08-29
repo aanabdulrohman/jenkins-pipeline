@@ -5,19 +5,19 @@ pipeline {
     
     stage ("Build") {
       steps {
-        echo "Hello Build"
+        echo ("Hello Build")
       }
     }
 
     stage ("Test") {
     steps {
-        echo "Hello Test"
+        echo ("Hello Test")
       }
     }
 
     stage ("Build") {
     steps {
-        echo "Hello Build"
+        echo ("Hello Build")
       }
     }
 
