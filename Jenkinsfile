@@ -8,19 +8,18 @@ pipeline {
       }
     }
   }
-}
-
-post {
-  always {
-    echo "Hallo guys"
-  }
-  success {
-    echo "Yeay success gusy"
-  }
-  failure {
-    echo "Oh no, failure"
-  }
-  cleanup {
-    echo "Don't care success or error"
+  post {
+    always {
+      echo "Hallo guys"
+    }
+    success {
+      echo "Yeay success gusy"
+    }
+    failure {
+      echo "Oh no, failure"
+    }
+    cleanup {
+      echo "Don't care success or error"
+    }
   }
 }
