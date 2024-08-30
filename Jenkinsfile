@@ -15,9 +15,9 @@ pipeline {
       }
     }
 
-    stage("Build") {
+    stage("Deploy") {
       steps {
-        echo("Hello Build")
+        echo("Hello Deploy")
       }
     }
 
