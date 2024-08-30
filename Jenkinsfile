@@ -6,18 +6,21 @@ pipeline {
     stage("Build") {
       steps {
         echo("Hello Build")
+        sleep(5)
       }
     }
 
     stage("Test") {
       steps {
         echo("Hello Test")
+        sleep(6)
       }
     }
 
     stage("Deploy") {
       steps {
         echo("Hello Deploy")
+        sleep(7)
       }
     }
 
